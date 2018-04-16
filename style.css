@@ -1,0 +1,1043 @@
+body
+{
+    background-color: #fbfbfb;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+@media screen and (min-width:960px) {
+    .container {
+        display: grid;
+        grid-template-columns: 50% 50%;
+ 
+        grid-template-rows: 80px;
+        margin: auto;
+        max-width: 1100px;
+        justify-items: center;
+        }
+    .logo
+        {
+        display: grid;
+        grid-column: 1; 
+        width: 100%;
+        }
+    .logo_img
+    {
+        width: 258px;
+        height: 52px;
+    }
+    .menu
+        {
+        display: grid;
+        grid-column: 2;
+        grid-template-columns: repeat(5, 0.5fr);
+        align-items: center;
+        justify-items: center;
+        text-decoration: none;
+        grid-gap: 15px;
+        width: 100%;
+        }
+    .menu-button a
+        {
+        text-decoration: none;
+        color: black;
+        }
+    .login-button a
+        {
+        background-color: #673d9d;
+        color: white;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        text-decoration: none;
+        }
+    .first
+        {
+            width: 100%;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-column: 1 / span 4;
+/*        grid-row: 3;*/
+        background-color: #673d9d;
+        text-align: center;
+        }
+    .sale
+        {
+        display: grid;
+        margin-top: 30px;
+        color: white;
+        }
+    .sale h2
+        {
+        font-size: 1.63em;
+        font-weight: 400;
+        }
+    .sale h3
+        {
+        font-size: 1.38em;
+        font-weight: 400;
+        }
+    .sale img
+        {
+        margin-top:1.25em;
+        margin-bottom: 20px;
+        }
+    .form_sign_up
+    {
+        display: grid;
+        grid-template-columns: 60% 30%;
+        align-items: center;
+        justify-items: center;
+        margin-top: -40px;
+    }
+    .form-email
+        {
+        display: grid;
+        text-align: center;
+        }
+    .email
+        {
+        margin-right: 20px;
+        padding-left: 5px;
+        text-align: left;
+        }
+    .sign_up
+        {
+        text-align: center;
+        border: 1px solid #000000;
+        width: 110px;
+        padding-left: 5px;
+        padding-right: 5px;
+        color: white;
+        }
+    .ipad
+        {
+        display: grid;
+        }
+    .ipad img
+        {
+        margin-top: 40px;
+        margin-bottom: -30px;
+        }
+    .second
+        {
+        display: grid;
+        grid-column: 1 / span 3;
+        justify-items: center;
+        align-items: center;
+        margin-top: 30px;
+        border-bottom: 2px solid;
+        width: 100%;
+        }
+    .second h1
+        {
+        font-size: 2em;
+        }
+    .tiles
+        {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        justify-items: center;
+        align-items: center;
+        }
+    .tile
+        {
+        display: grid;
+        margin-right: 10px;
+        background-color: #fbfbfb;
+        text-align: center;
+        }
+    .tile img
+        {
+        justify-items: center;
+        width: 70px;
+        height: 70px;
+        }
+    .center_img 
+        {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        }
+    .tile h2
+        {
+        font-weight: 700;
+        font-size: 1em;
+        }
+    .tile h3
+        {
+        font-size: 0.75em;
+        font-weight: 400;
+        }
+    .see_all_features
+        {
+        background-color: #7d47c2;
+        text-align: center;
+        border: 1px solid #000000;
+        width: 150px;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        color: white;
+        }
+    .third
+        {
+        display: grid;
+/*        grid-template-columns: 50% 50%;*/
+        grid-column: 1 / span 12;
+/*        grid-row: 5;*/
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+        text-align: center;
+        }
+    .third h1
+        {
+        font-size: 2em;
+        }
+    .third img
+        {
+        width: 672px;
+        height: 395px;
+        }
+    .fourth
+        {
+        display: grid;
+/*        grid-template-columns: 50% 50%;*/
+        grid-column: 1 / span 12;
+/*       grid-row: 6;*/
+        justify-items: center;
+        align-items: center;
+        margin-top: 30px;
+        text-align: center;
+        border-top: 2px solid;
+        width: 100%;
+        }
+    .fourth h1
+        {
+        font-size: 2em;
+        }
+    .workers
+        {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column: 1 / span 12;
+/*        grid-row: 7;*/
+        justify-items: center;
+        align-items: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        }
+    .worker
+        {
+        display: grid;
+        width: auto;
+        text-align: center;
+        }
+.quote
+{
+    display: grid;
+    background-image: url('img/dymek.png');
+    width: 260px;
+    height: 253px;
+    font-size: 0.88em;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    margin-right: 20px;
+    }
+/*
+.cytat
+    {
+    display: block;
+    position: relative;
+    left: 46px;
+    top: 40px;
+    bottom: 46px;
+    right: 40px;
+    text-align: center;
+}
+*/
+.profile img
+    {
+        height: 180px;
+        width: 180px;
+    }
+.worker h2
+{
+    font-size: 1.25em;
+    font-weight: 700;
+}
+.worker h3
+{
+    font-size: 1em;
+    font-weight: 400;
+}
+.map
+{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column: 1 / span 4;
+/*    grid-row: 8;*/
+    background-color: black;
+    color: lightgray;
+    padding-left: 5%;
+    width: 100%;
+}
+.list
+{
+
+    display: grid;
+    padding-top: 10px;
+}
+.list h1
+{
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+.list img
+{
+    margin-right: 5px;
+}
+.footer
+{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-column: 1/ span 3;
+    width: 100%;
+    background-color: #673d9d;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5%;
+}
+}
+
+@media screen and (min-width: 768px) and (max-width:960px) 
+{
+        .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 80px;
+        margin: auto;
+        max-width: 960px;
+        justify-items: center;
+        }
+    .logo
+        {
+        display: grid;
+        grid-column: 1; 
+        width: 100%;
+        margin: auto;
+        justify-items: center;
+        }
+    .logo_img
+    {
+        width: 258px;
+        height: 52px;
+    }
+    .menu
+        {
+        display: grid;
+        grid-column: 1;
+        grid-template-columns: repeat(5, 0.5fr);
+        align-items: center;
+        justify-items: center;
+        text-decoration: none;
+/*        grid-gap: 15px;*/
+        width: 100%;
+        margin-bottom: 15px;
+        }
+    .menu-button a
+        {
+        text-decoration: none;
+        color: black;
+        }
+    .login-button a
+        {
+        background-color: #673d9d;
+        color: white;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        text-decoration: none;
+        }
+    .first
+        {
+        width: 100%;
+        display: grid;
+        grid-column: 1 / span 4;
+        background-color: #673d9d;
+        text-align: center;
+        }
+    .sale
+        {
+        display: grid;
+        grid-column: 1;
+        margin-top: 30px;
+        color: white;
+        }
+    .sale h2
+        {
+        font-size: 1.63em;
+        font-weight: 400;
+        }
+    .sale h3
+        {
+        font-size: 1.38em;
+        font-weight: 400;
+        }
+    .sale img
+        {
+        margin-top:1.25em;
+        margin-bottom: 20px;
+        }
+    .form_sign_up
+    {
+        display: grid;
+        grid-template-columns: 60% 30%;
+        align-items: center;
+        justify-items: center;
+        margin-top: -40px;
+    }
+    .form-email
+        {
+        display: grid;
+        text-align: center;
+        }
+    .email
+        {
+        margin-right: 10px;
+        margin-top: 30px;
+        padding-left: 5px;
+        text-align: left;
+        }
+    .sign_up
+        {
+        text-align: center;
+        border: 1px solid #000000;
+        width: 110px;
+        padding-left: 5px;
+        padding-right: 5px;
+        margin-top: 30px;
+        color: white;
+        }
+    .ipad
+        {
+        display: grid;
+        grid-column: 1;
+        justify-items: center;
+        }
+    .ipad img
+        {
+        margin-top: 40px;
+        margin-bottom: -30px;
+        }
+    .second
+        {
+        display: grid;
+        grid-column: 1 / span 3;
+        justify-items: center;
+        align-items: center;
+        margin-top: 30px;
+        border-bottom: 2px solid;
+        width: 100%;
+        }
+    .second h1
+        {
+        font-size: 2em;
+        }
+    .tiles
+        {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+         margin-left: auto;
+            margin-right: auto;
+        justify-items: center;
+        align-items: center;
+        }
+        .tiles div:nth-child(1) 
+        {
+        margin-right: 20px;
+        margin-bottom: 20px;
+        }
+        .tiles div:nth-child(3) 
+        {
+       grid-column: 1;
+       justify-content: center;
+        margin-right: 20px;
+        }
+    .tile
+        {
+        display: grid;
+        margin-right: 10px;
+        background-color: #fbfbfb;
+        text-align: center;
+        width: 200px;
+        height: 200px;
+        }
+    .tile img
+        {
+        justify-items: center;
+        width: 70px;
+        height: 70px;
+        }
+    .center_img 
+        {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        }
+    .tile h2
+        {
+        font-weight: 700;
+        font-size: 1em;
+        }
+    .tile h3
+        {
+        font-size: 0.75em;
+        font-weight: 400;
+        }
+    .see_all_features
+        {
+        background-color: #7d47c2;
+        text-align: center;
+        border: 1px solid #000000;
+        width: 150px;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        color: white;
+        }
+    .third
+        {
+        display: grid;
+        grid-column: 1;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+        text-align: center;
+        }
+    .third h1
+        {
+        font-size: 2em;
+        }
+    .third img
+        {
+        max-width: 672px;
+        max-height: 395px;
+        }
+    .fourth
+        {
+        display: grid;
+        grid-column: 1;
+        justify-items: center;
+        align-items: center;
+        margin-top: 30px;
+        text-align: center;
+        border-top: 2px solid;
+        width: 100%;
+        }
+    .fourth h1
+        {
+        font-size: 2em;
+        }
+    .workers
+        {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column: 1;
+        grid-auto-rows: 50% 50%;
+        justify-items: center;
+        align-items: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        }
+        .workers div:nth-child(3) 
+        {
+       grid-column: 1;
+       justify-content: center;
+        text-align: center;
+        }
+    .worker
+        {
+        display: grid;
+        width: auto;
+        text-align: center;
+        }
+.quote
+{
+    display: grid;
+    background-image: url('img/dymek.png');
+    width: 260px;
+    height: 253px;
+    font-size: 0.88em;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    margin-right: 20px;
+    }
+/*
+.cytat
+    {
+    display: block;
+    position: relative;
+    left: 46px;
+    top: 40px;
+    bottom: 46px;
+    right: 40px;
+    text-align: center;
+}
+*/
+.profile img
+    {
+        height: 180px;
+        width: 180px;
+    }
+.worker h2
+{
+    font-size: 1.25em;
+    font-weight: 700;
+}
+.worker h3
+{
+    font-size: 1em;
+    font-weight: 400;
+}
+.map
+{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column: 1 / span 3;
+    background-color: black;
+    color: lightgray;
+    width: 100%;
+    justify-items: start;
+}
+      .map div:nth-child() 
+    {
+        margin-top: 30px;
+        
+    }
+        .map div:nth-child(1) 
+        {
+       grid-column: 1;
+        grid-row: 1;
+        margin-left: 15px;
+        }
+    .map div:nth-child(3) 
+        {
+       grid-column: 1;
+       grid-row: 2;
+        margin-left: 15px;
+        }
+    .map div:nth-child(4) 
+    {
+    grid-row: 2;
+    }
+.list
+{
+
+    display: grid;
+    padding-top: 10px;
+}
+.list h1
+{
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: darkslateblue;
+}
+.list img
+{
+    margin-right: 5px;
+}
+
+.footer
+{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-column: 1/ span 3;
+    width: 100%;
+    background-color: #673d9d;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5%;
+}
+    
+}
+
+@media screen and (max-width:768px)
+    {
+        .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 80px;
+        margin: auto;
+        max-width: 960px;
+        justify-items: center;
+        }
+    .logo
+        {
+        display: grid;
+        grid-column: 1; 
+        width: 100%;
+        margin: auto;
+        justify-items: center;
+        }
+    .logo_img
+    {
+        width: 258px;
+        height: 52px;
+    }
+    .menu
+        {
+        display: grid;
+        grid-column: 1;
+        grid-template-columns: repeat(5, 0.5fr);
+        align-items: center;
+        justify-items: center;
+        text-decoration: none;
+/*        grid-gap: 15px;*/
+        width: 100%;
+        margin-bottom: 15px;
+        }
+    .menu-button a
+        {
+        text-decoration: none;
+        color: black;
+        }
+    .login-button a
+        {
+        background-color: #673d9d;
+        color: white;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        text-decoration: none;
+        }
+    .first
+        {
+        width: 100%;
+        display: grid;
+        grid-column: 1 / span 4;
+        background-color: #673d9d;
+        text-align: center;
+        }
+    .sale
+        {
+        display: grid;
+        grid-column: 1;
+        margin-top: 30px;
+        color: white;
+        }
+    .sale h2
+        {
+        font-size: 1.63em;
+        font-weight: 400;
+        }
+    .sale h3
+        {
+        font-size: 1.38em;
+        font-weight: 400;
+        }
+    .sale img
+        {
+        margin-top:1.25em;
+        margin-bottom: 20px;
+        }
+    .form_sign_up
+    {
+        display: grid;
+        grid-template-columns: 60% 30%;
+        align-items: center;
+        justify-items: center;
+        margin-top: -40px;
+    }
+    .form-email
+        {
+        display: grid;
+        text-align: center;
+        }
+    .email
+        {
+        margin-right: 10px;
+        margin-top: 30px;
+        padding-left: 5px;
+        text-align: left;
+        }
+    .sign_up
+        {
+        text-align: center;
+        border: 1px solid #000000;
+        width: 110px;
+        padding-left: 5px;
+        padding-right: 5px;
+        margin-top: 30px;
+        color: white;
+        }
+    .ipad
+        {
+        display: grid;
+        grid-column: 1;
+        justify-items: center;
+        }
+    .ipad img
+        {
+        margin-top: 40px;
+        margin-bottom: -30px;
+        }
+    .second
+        {
+        display: grid;
+        grid-column: 1 / span 3;
+        justify-items: center;
+        align-items: center;
+        margin-top: 30px;
+        border-bottom: 2px solid;
+        width: 100%;
+        }
+    .second h1
+        {
+        font-size: 2em;
+        }
+    .tiles
+        {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+         margin-left: auto;
+            margin-right: auto;
+        justify-items: center;
+        align-items: center;
+        }
+        .tiles div:nth-child(1) 
+        {
+        margin-right: 20px;
+        margin-bottom: 20px;
+        }
+        .tiles div:nth-child(3) 
+        {
+       grid-column: 1;
+       justify-content: center;
+        margin-right: 20px;
+        }
+    .tile
+        {
+        display: grid;
+        margin-right: 10px;
+        background-color: #fbfbfb;
+        text-align: center;
+        width: 200px;
+        height: 200px;
+        }
+    .tile img
+        {
+        justify-items: center;
+        width: 70px;
+        height: 70px;
+        }
+    .center_img 
+        {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        }
+    .tile h2
+        {
+        font-weight: 700;
+        font-size: 1em;
+        }
+    .tile h3
+        {
+        font-size: 0.75em;
+        font-weight: 400;
+        }
+    .see_all_features
+        {
+        background-color: #7d47c2;
+        text-align: center;
+        border: 1px solid #000000;
+        width: 150px;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        color: white;
+        }
+    .third
+        {
+        display: grid;
+        grid-column: 1;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+        text-align: center;
+        }
+    .third h1
+        {
+        font-size: 2em;
+        }
+    .third img
+        {
+        max-width: 448px;
+        max-height: 263px;
+        }
+    .fourth
+        {
+        display: grid;
+        grid-column: 1;
+        justify-items: center;
+        align-items: center;
+        margin-top: 30px;
+        text-align: center;
+        border-top: 2px solid;
+        width: 100%;
+        }
+    .fourth h1
+        {
+        font-size: 2em;
+        }
+    .workers
+        {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column: 1;
+        grid-auto-rows: 50% 50%;
+        justify-items: center;
+        align-items: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        }
+        
+        .workers div:nth-child(3) 
+        {
+       grid-column: 1;
+       justify-content: center;
+        text-align: center;
+        }
+    .worker
+        {
+        display: grid;
+        width: auto;
+        text-align: center;
+        }
+.quote
+{
+    display: grid;
+    background-image: url('img/dymek.png');
+    width: 260px;
+    height: 253px;
+    font-size: 0.88em;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    margin-right: 20px;
+    }
+/*
+.cytat
+    {
+    display: block;
+    position: relative;
+    left: 46px;
+    top: 40px;
+    bottom: 46px;
+    right: 40px;
+    text-align: center;
+}
+*/
+.profile img
+    {
+        height: 180px;
+        width: 180px;
+    }
+.worker h2
+{
+    font-size: 1.25em;
+    font-weight: 700;
+}
+.worker h3
+{
+    font-size: 1em;
+    font-weight: 400;
+}
+.map
+{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column: 1 / span 3;
+    background-color: black;
+    color: lightgray;
+    width: 100%;
+    justify-items: start;
+}
+      .map div:nth-child() 
+    {
+        margin-top: 30px;
+        
+    }
+        .map div:nth-child(1) 
+        {
+       grid-column: 1;
+        grid-row: 1;
+        margin-left: 15px;
+        }
+    .map div:nth-child(3) 
+        {
+       grid-column: 1;
+       grid-row: 2;
+        margin-left: 15px;
+        }
+    .map div:nth-child(4) 
+    {
+    grid-row: 2;
+    }
+.list
+{
+
+    display: grid;
+    padding-top: 10px;
+}
+.list h1
+{
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: darkslateblue;
+}
+.list img
+{
+    margin-right: 5px;
+}
+
+.footer
+{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-column: 1/ span 3;
+    width: 100%;
+    background-color: #673d9d;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5%;
+}
+    
+}
