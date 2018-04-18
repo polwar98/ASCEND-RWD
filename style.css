@@ -251,18 +251,13 @@ body
     text-align: center;
     margin-right: 20px;
     }
-/*
 .cytat
     {
     display: block;
     position: relative;
-    left: 46px;
-    top: 40px;
-    bottom: 46px;
-    right: 40px;
+     padding: 40px 46px;
     text-align: center;
 }
-*/
 .profile img
     {
         height: 180px;
@@ -589,18 +584,13 @@ body
     text-align: center;
     margin-right: 20px;
     }
-/*
 .cytat
     {
     display: block;
     position: relative;
-    left: 46px;
-    top: 40px;
-    bottom: 46px;
-    right: 40px;
+     padding: 40px 46px;
     text-align: center;
 }
-*/
 .profile img
     {
         height: 180px;
@@ -951,18 +941,13 @@ body
     text-align: center;
     margin-right: 20px;
     }
-/*
 .cytat
     {
     display: block;
     position: relative;
-    left: 46px;
-    top: 40px;
-    bottom: 46px;
-    right: 40px;
+     padding: 40px 46px;
     text-align: center;
 }
-*/
 .profile img
     {
         height: 180px;
