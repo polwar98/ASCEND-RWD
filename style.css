@@ -1,16 +1,20 @@
+html 
+{
+    /* font-size: 16px; */
+    overflow-x: hidden;
+}
 body
 {
-    background-color: #fbfbfb;
+    background-color: black;
     font-family: 'Montserrat', sans-serif;
     margin: 0;
 }
-
-    .container {
+.container {
         display: grid;
         grid-template-columns: 50% 50%;
         grid-template-rows: 80px;
         margin: auto;
-        max-width: 1100px;
+        /* max-width: 1100px; */
         justify-items: center;
         }
     .logo
@@ -18,6 +22,8 @@ body
         display: grid;
         grid-column: 1; 
         width: 100%;
+        margin-top: 10px;
+        margin-left: 20%;
         }
     .logo_img
     {
@@ -35,10 +41,20 @@ body
         grid-gap: 15px;
         width: 100%;
         }
-    .menu-button a
+        .menu-button a
         {
         text-decoration: none;
         color: black;
+        }
+    .menu-button a:hover
+        {
+        text-decoration: none;
+        color: black;
+        }
+    .login-button a:hover
+        {
+        text-decoration: none;
+        color: white;
         }
     .login-button a
         {
@@ -52,13 +68,24 @@ body
         }
     .first
         {
-            width: 100%;
+        width: 100%;
         display: grid;
+        /* position: relative; */
         grid-template-columns: 50% 50%;
-        grid-column: 1 / span 4;
+        grid-column: 1 / -1;
 /*        grid-row: 3;*/
         background-color: #673d9d;
         text-align: center;
+        }
+    .first:before 
+        {
+            content:"";
+            background-color: #673d9d;
+            position: absolute;
+            height: 553px;
+            width: 4000px;
+            left: -2000px;
+            z-index: -1;
         }
     .sale
         {
@@ -251,11 +278,11 @@ body
     text-align: center;
     margin-right: 20px;
     }
-.cytat
+.quote-a
     {
     display: block;
     position: relative;
-     padding: 40px 46px;
+    padding: 40px 46px;
     text-align: center;
 }
 .profile img
@@ -284,21 +311,38 @@ body
     padding-left: 5%;
     width: 100%;
 }
+.map:before {
+    content:"";
+    background-color: black;
+    position: absolute;
+    width: 4000px;
+    height: 360px;
+    left: -2000px;
+    z-index: -1;
+}
 .list
 {
-
     display: grid;
     padding-top: 10px;
 }
+
 .list h1
 {
     font-size: 1.5em;
     margin-bottom: 20px;
 }
+.list a
+{
+    margin-bottom: 10px;
+}
 .list img
 {
     margin-right: 5px;
 }
+/* .list:last-child a:first-child
+{
+    color: green;
+} */
 .footer
 {
     display: grid;
@@ -309,9 +353,18 @@ body
     color: white;
     padding-top: 10px;
     padding-bottom: 10px;
-    padding-left: 5%;
+    padding-left: 10%;
 }
-
+.footer a
+{
+    color: white;
+    text-decoration: none;
+}
+.footer a:hover
+{
+    color: white;
+    text-decoration: none;
+}
 
 @media screen and (min-width: 768px) and (max-width:960px) 
 {
@@ -353,6 +406,16 @@ body
         text-decoration: none;
         color: black;
         }
+    .menu-button a:hover
+        {
+        text-decoration: none;
+        color: black;
+        }
+    .login-button a:hover
+        {
+        text-decoration: none;
+        color: white;
+        }
     .login-button a
         {
         background-color: #673d9d;
@@ -370,6 +433,16 @@ body
         grid-column: 1 / span 4;
         background-color: #673d9d;
         text-align: center;
+        }
+    .first:before 
+        {
+            content:"";
+            background-color: #673d9d;
+            position: absolute;
+            height: 553px;
+            width: 4000px;
+            left: -2000px;
+            z-index: -1;
         }
     .sale
         {
@@ -426,7 +499,7 @@ body
     .ipad
         {
         display: grid;
-        grid-column: 1;
+        grid-column: 2;
         justify-items: center;
         }
     .ipad img
@@ -451,11 +524,12 @@ body
     .tiles
         {
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
-         margin-left: auto;
-            margin-right: auto;
-        justify-items: center;
-        align-items: center;
+        grid-template-columns: 50% 50%;
+        /* margin-left: auto;
+        margin-right: auto; */
+        /* justify-items: center; */
+        /* align-items: center; */
+        justify-content: center;
         }
         .tiles div:nth-child(1) 
         {
@@ -464,9 +538,14 @@ body
         }
         .tiles div:nth-child(3) 
         {
-       grid-column: 1;
-       justify-content: center;
+        grid-column: 1;
+        justify-content: center;
         margin-right: 20px;
+        margin-top: 10px;
+        }
+        .tiles div:nth-child(4) 
+        {
+        margin-top: 10px;
         }
     .tile
         {
@@ -562,8 +641,8 @@ body
         }
         .workers div:nth-child(3) 
         {
-       grid-column: 1;
-       justify-content: center;
+        /* grid-column: 1; */
+        justify-content: center;
         text-align: center;
         }
     .worker
@@ -576,25 +655,25 @@ body
 {
     display: grid;
     background-image: url('img/dymek.png');
-    width: 260px;
-    height: 253px;
-    font-size: 0.88em;
+    width: 208px;
+    height: 204px;
+    font-size: 0.8em;
     justify-items: center;
     align-items: center;
     text-align: center;
     margin-right: 20px;
     }
-.cytat
+.quote-a
     {
     display: block;
     position: relative;
-     padding: 40px 46px;
+    padding: 32px 37px;
     text-align: center;
 }
 .profile img
     {
-        height: 180px;
-        width: 180px;
+    height: 144px;
+    width: 144px;
     }
 .worker h2
 {
@@ -615,6 +694,15 @@ body
     color: lightgray;
     width: 100%;
     justify-items: start;
+}
+.map:before {
+    content:"";
+    background-color: black;
+    position: absolute;
+    width: 4000px;
+    height: 656px;
+    left: -2000px;
+    z-index: -1;
 }
       .map div:nth-child() 
     {
@@ -671,18 +759,16 @@ body
 
 @media screen and (max-width:768px)
     {
-        .container {
+    .container {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 50% 50%;
         grid-template-rows: 80px;
-        margin: auto;
-        max-width: 960px;
-        justify-items: center;
+        margin: 0;
         }
     .logo
         {
         display: grid;
-        grid-column: 1; 
+        grid-column: 1/-1; 
         width: 100%;
         margin: auto;
         justify-items: center;
@@ -692,22 +778,29 @@ body
         width: 258px;
         height: 52px;
     }
-    .menu
-        {
+    .menu {
+        grid-column: 1 / -1;
         display: grid;
-        grid-column: 1;
-        grid-template-columns: repeat(5, 0.5fr);
+        grid-template-columns: repeat(5, 1fr);
         align-items: center;
         justify-items: center;
-        text-decoration: none;
-/*        grid-gap: 15px;*/
-        width: 100%;
-        margin-bottom: 15px;
+        font-size: 0.7em;
+        margin-bottom: 10px;
         }
     .menu-button a
         {
         text-decoration: none;
         color: black;
+        }
+    .menu-button a:hover
+        {
+        text-decoration: none;
+        color: black;
+        }
+    .login-button a:hover
+        {
+        text-decoration: none;
+        color: white;
         }
     .login-button a
         {
@@ -723,14 +816,25 @@ body
         {
         width: 100%;
         display: grid;
-        grid-column: 1 / span 4;
+        grid-column: 1 / -1;
+        grid-template-columns: 1fr;
         background-color: #673d9d;
         text-align: center;
+        }
+    .first:before 
+        {
+        content:"";
+        background-color: #673d9d;
+        position: absolute;
+        height: 915px;
+        width: 4000px;
+        left: -2000px;
+        z-index: -1;
         }
     .sale
         {
         display: grid;
-        grid-column: 1;
+        grid-column: 1/-1;
         margin-top: 30px;
         color: white;
         }
@@ -802,27 +906,33 @@ body
         }
     .second h1
         {
-        font-size: 2em;
+        font-size: 1.5em;
         }
     .tiles
         {
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
-         margin-left: auto;
-            margin-right: auto;
-        justify-items: center;
-        align-items: center;
+        grid-template-columns: 50% 50%;
+        /* margin-left: auto;
+        margin-right: auto; */
+        /* justify-items: center; */
+        /* align-items: center; */
+        justify-content: center;
         }
-        .tiles div:nth-child(1) 
+    .tiles div:nth-child(1) 
         {
         margin-right: 20px;
         margin-bottom: 20px;
         }
-        .tiles div:nth-child(3) 
+    .tiles div:nth-child(3) 
         {
-       grid-column: 1;
-       justify-content: center;
+        grid-column: 1;
+        justify-content: center;
         margin-right: 20px;
+        margin-top: 10px;
+        }
+    .tiles div:nth-child(4) 
+        {
+        margin-top: 10px;
         }
     .tile
         {
@@ -830,8 +940,8 @@ body
         margin-right: 10px;
         background-color: #fbfbfb;
         text-align: center;
-        width: 200px;
-        height: 200px;
+        width: 160px;
+        height: 240px;
         }
     .tile img
         {
@@ -893,7 +1003,7 @@ body
     .fourth
         {
         display: grid;
-        grid-column: 1;
+        grid-column: 1/-1;
         justify-items: center;
         align-items: center;
         margin-top: 30px;
@@ -908,19 +1018,22 @@ body
     .workers
         {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-column: 1;
-        grid-auto-rows: 50% 50%;
+        grid-template-columns: repeat(2, 1fr);
         justify-items: center;
         align-items: center;
         margin-top: 20px;
         margin-bottom: 20px;
         }
-        
-        .workers div:nth-child(3) 
+        .workers div:nth-child(2) 
         {
-       grid-column: 1;
-       justify-content: center;
+        grid-column: 2;
+        justify-content: center;
+        text-align: center;
+        }
+    .workers div:nth-child(3) 
+        {
+        grid-column: 1;
+        justify-content: center;
         text-align: center;
         }
     .worker
@@ -933,25 +1046,25 @@ body
 {
     display: grid;
     background-image: url('img/dymek.png');
-    width: 260px;
-    height: 253px;
-    font-size: 0.88em;
+    width: 187px;
+    height: 184px;
+    font-size: 0.75em;
     justify-items: center;
     align-items: center;
     text-align: center;
     margin-right: 20px;
     }
-.cytat
+.quote-a
     {
     display: block;
     position: relative;
-     padding: 40px 46px;
+    padding: 32px 37px;
     text-align: center;
 }
 .profile img
     {
-        height: 180px;
-        width: 180px;
+    height: 130px;
+    width: 130px;
     }
 .worker h2
 {
@@ -972,6 +1085,15 @@ body
     color: lightgray;
     width: 100%;
     justify-items: start;
+}
+.map:before {
+    content:"";
+    background-color: black;
+    position: absolute;
+    width: 4000px;
+    height: 656px;
+    left: -2000px;
+    z-index: -1;
 }
       .map div:nth-child() 
     {
